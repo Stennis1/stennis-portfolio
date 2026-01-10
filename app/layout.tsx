@@ -1,37 +1,32 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/Navbar";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import Navbar from './components/Navbar'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Stennis Smith - Portfolio",
-  description: 
-    "Full-stack developer focused on backend systems, cloud infrastructure, and applied AI.",
-};
+  title: 'Stennis Smith - Software Engineer',
+  description: 'Backend systems, cloud infrastructure, and full-stack development',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={inter.className}>
         <Navbar />
-        {children}
+        <main className="main">{children}</main>
+        <footer className="footer">
+          <div className="footerContent">
+            <p>© {new Date().getFullYear()} Stennis Smith. All rights reserved.</p>
+            <p>Built with Next.js · Hosted on Vercel</p>
+          </div>
+        </footer>
       </body>
     </html>
-  );
+  )
 }

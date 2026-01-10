@@ -1,0 +1,216 @@
+.homeContent {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroSection {
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.secondaryButton {
+  background: var(--background-color);
+  color: var(--text-color);
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.secondaryButton:hover {
+  background: var(--background-alt);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.featuredSection {
+  margin: 6rem 0;
+  padding: 3rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.sectionHeader p {
+  color: var(--text-light);
+  font-size: 1.125rem;
+}
+
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.expertiseCard {
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: all 0.2s;
+}
+
+.expertiseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.expertiseIcon {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.expertiseCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.expertiseCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.ctaSection {
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.ctaSection p {
+  color: var(--text-light);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  background: var(--text-color);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background: #374151;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .expertiseGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .heroActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .featuredSection {
+    margin: 4rem 0;
+    padding: 2rem 0;
+  }
+}
