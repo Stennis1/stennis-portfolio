@@ -75,11 +75,11 @@ export default function WritingPage() {
           <div className={styles.newsletterContent}>
             <h2>Subscribe to My Newsletter</h2>
             <p>
-              Get new articles on backend systems, cloud infrastructure, and software architecture 
+              Get new articles on frontend, backend systems, cloud infrastructure, and software architecture 
               delivered directly to your inbox.
             </p>
             <a
-              href="https://stennissmith.substack.com"
+              href="https://stennissmith.substack.com/subscribe"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.newsletterButton}
