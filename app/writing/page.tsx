@@ -4,32 +4,28 @@ import styles from "./page.module.css";
 export default function WritingPage() {
   const articles = [
     {
-      title: "Designing Scalable Authentication Systems",
-      description: "A deep dive into building secure and scalable authentication systems with modern OAuth flows and JWT management.",
-      date: "2024-01-15",
-      readTime: "8 min read",
-      link: "https://stennissmith.substack.com/p/designing-scalable-authentication-systems"
+      title: "A New Year, A Different Kind of Commitment",
+      description: "The Battle of New Year Resolutions... \n\ \
+              The new year has a way of making everything feel possible.",
+      date: "2026-01-01",
+      readTime: "5 min read",
+      link: "https://open.substack.com/pub/stennissmith/p/a-new-year-a-different-kind-of-commitment"
     },
     {
-      title: "Infrastructure as Code Best Practices",
-      description: "Lessons learned from managing cloud infrastructure with Terraform and AWS, focusing on maintainability and collaboration.",
-      date: "2023-11-28",
-      readTime: "10 min read",
-      link: "https://stennissmith.substack.com/p/infrastructure-as-code-best-practices"
+      title: "Monitoring vs Observability in Software Systems",
+      description: "As software systems evolve from monoliths into distributed, cloud-native architectures, \
+                    keeping systems healthy has become harder and more important than ever. ",
+      date: "2025-12-24",
+      readTime: "3 min read",
+      link: "https://medium.com/@stennismith/monitoring-vs-observability-in-software-systems-4b9342dd96c8"
     },
     {
-      title: "Database Design for Scale",
-      description: "Patterns and anti-patterns in database design when building systems that need to handle millions of requests.",
-      date: "2023-09-12",
-      readTime: "12 min read",
-      link: "https://stennissmith.substack.com/p/database-design-for-scale"
-    },
-    {
-      title: "The Psychology of Clean Code",
-      description: "How writing maintainable code affects team productivity and long-term project success.",
-      date: "2023-07-05",
-      readTime: "6 min read",
-      link: "https://stennissmith.substack.com/p/the-psychology-of-clean-code"
+      title: "My Software Journey So Far And Where I’m Going Next",
+      description: "My journey into software hasn’t been a straight line. It didn’t start with childhood coding competitions, \
+                    a computer science background or reading entire programming books or manuals like Elon Musk and others.",
+      date: "2025-11-06",
+      readTime: "4 min read",
+      link: "https://medium.com/@stennismith/my-software-journey-so-far-and-where-im-going-next-9ef1605d856c"
     }
   ];
 
