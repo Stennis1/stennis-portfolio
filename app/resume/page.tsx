@@ -35,7 +35,7 @@ export default function ResumePage() {
             </h2>
             <p>
               Software Engineer specializing in backend systems, cloud infrastructure, and full-stack development. 
-              Experienced in designing scalable architectures, implementing secure authentication systems, and 
+              Gaining experience in designing scalable architectures, implementing secure authentication systems, and 
               deploying cloud-native applications. Passionate about clean code, system design, and mentorship.
             </p>
           </section>
@@ -51,11 +51,11 @@ export default function ResumePage() {
               <div className={styles.skillCategory}>
                 <h3>Languages & Frameworks</h3>
                 <ul>
-                  <li>TypeScript / JavaScript (ES6+)</li>
+                  <li>JavaScript (ES6+) / Typescript</li>
                   <li>Node.js / Express</li>
                   <li>Python / Django</li>
-                  <li>Java / Spring Boot</li>
-                  <li>Go</li>
+                  <li>React / Next.js</li>
+                  <li>Dart / Flutter</li>
                 </ul>
               </div>
               <div className={styles.skillCategory}>
@@ -81,7 +81,6 @@ export default function ResumePage() {
                 <h3>Tools & Practices</h3>
                 <ul>
                   <li>Git / GitHub Actions</li>
-                  <li>REST / GraphQL APIs</li>
                   <li>Test-Driven Development</li>
                   <li>Agile / Scrum Methodologies</li>
                   <li>System Design & Architecture</li>
@@ -102,9 +101,9 @@ export default function ResumePage() {
                 <h3>Authentication & Authorization Platform</h3>
                 <p className={styles.projectDesc}>
                   Built a secure authentication system supporting multiple OAuth providers, 
-                  implementing JWT-based sessions and role-based access control.
+                  implementing JWT-based sessions.
                 </p>
-                <span className={styles.techStack}>Node.js · TypeScript · PostgreSQL · Redis</span>
+                <span className={styles.techStack}>Node.js · TypeScript · PostgreSQL</span>
               </div>
               <div className={styles.projectHighlight}>
                 <h3>Cloud Text-to-Speech Platform</h3>
@@ -133,9 +132,15 @@ export default function ResumePage() {
               Education & Certifications
             </h2>
             <div className={styles.educationItem}>
-              <h3>Bachelor of Science in Computer Science</h3>
-              <p className={styles.institution}>University Name</p>
-              <p className={styles.details}>Graduated with Honors · Relevant Coursework: Algorithms, Distributed Systems, Cloud Computing</p>
+              <h3>MBA. Management Information Systems</h3>
+              <p className={styles.institution}>University of Ghana Business School</p>
+              <p className={styles.details}>Relevant Coursework: Production/Operations Management, 
+                IT Policy, Business Law, Information Systems Analysis and Design, Software Engineering, etc.</p>
+            </div>
+            <div className={styles.educationItem}>
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p className={styles.institution}>University of Ghana</p>
+              <p className={styles.details}>Relevant Coursework: Networking, Data Security, Databases, etc.</p>
             </div>
             <div className={styles.educationItem}>
               <h3>AWS Certified Solutions Architect - Associate</h3>
