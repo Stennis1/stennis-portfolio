@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className={styles.navBrand}>
           <Link href="/" className={styles.brandLink}>
             <span className={styles.brandName}>Stennis Smith</span>
-            <span className={styles.brandTitle}>Software Engineer</span>
+            <span className={styles.brandTitle}>Software Engineer & AI Enthusiast</span>
           </Link>
         </div>
         

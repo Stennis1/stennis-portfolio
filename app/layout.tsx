@@ -23,7 +23,7 @@ export default function RootLayout({
         <footer className="footer">
           <div className="footerContent">
             <p>© {new Date().getFullYear()} Stennis Smith. All rights reserved.</p>
-            <p>Built with Next.js · Hosted on Vercel</p>
+            <p>Documenting projects and Technical writings</p>
           </div>
         </footer>
       </body>
