@@ -21,7 +21,9 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   padding: 2rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   position: relative;
 }
 
@@ -102,7 +104,7 @@
 }
 
 .detailsList li:before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0.5rem;
   color: var(--primary-color);
@@ -175,12 +177,12 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .projectFooter {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .projectLinks {
     width: 100%;
     justify-content: flex-start;

@@ -66,7 +66,7 @@
 }
 
 .active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -82,7 +82,7 @@
     gap: 1rem;
     padding: 1rem;
   }
-  
+
   .navLinks {
     gap: 1rem;
     flex-wrap: wrap;

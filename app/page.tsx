@@ -14,8 +14,9 @@ export default function HomePage() {
           </h1>
 
           <p className={styles.heroSubtitle}>
-           I’m a software engineer with a strong interest in backend systems, cloud 
-            infrastructure, full-stack application development and Artificial Intelligence.
+            I’m a software engineer with a strong interest in backend systems,
+            cloud infrastructure, full-stack application development and
+            Artificial Intelligence.
           </p>
 
           <div className={styles.heroActions}>
@@ -35,43 +36,43 @@ export default function HomePage() {
             <p>Where I focus my engineering effort</p>
           </div>
 
-<div className={styles.expertiseGrid}>
-  <div className={styles.expertiseCard}>
-    <h3>Backend Architecture</h3>
-    <p>
-      Designing and implementing scalable backend services, RESTful APIs, and
-      service-layer architectures with a focus on maintainability, performance,
-      and clear domain boundaries.
-    </p>
-  </div>
+          <div className={styles.expertiseGrid}>
+            <div className={styles.expertiseCard}>
+              <h3>Backend Architecture</h3>
+              <p>
+                Designing and implementing scalable backend services, RESTful
+                APIs, and service-layer architectures with a focus on
+                maintainability, performance, and clear domain boundaries.
+              </p>
+            </div>
 
-  <div className={styles.expertiseCard}>
-    <h3>Cloud Infrastructure</h3>
-    <p>
-      Building and deploying cloud-native systems on AWS using
-      infrastructure-as-code tools such as Terraform, with an emphasis on
-      automation, reliability, and cost-aware design.
-    </p>
-  </div>
+            <div className={styles.expertiseCard}>
+              <h3>Cloud Infrastructure</h3>
+              <p>
+                Building and deploying cloud-native systems on AWS using
+                infrastructure-as-code tools such as Terraform, with an emphasis
+                on automation, reliability, and cost-aware design.
+              </p>
+            </div>
 
-  <div className={styles.expertiseCard}>
-    <h3>Systems Design</h3>
-    <p>
-      Designing distributed systems by reasoning about scalability, data
-      modeling, service communication, and operational trade-offs under real
-      production constraints.
-    </p>
-  </div>
+            <div className={styles.expertiseCard}>
+              <h3>Systems Design</h3>
+              <p>
+                Designing distributed systems by reasoning about scalability,
+                data modeling, service communication, and operational trade-offs
+                under real production constraints.
+              </p>
+            </div>
 
-  <div className={styles.expertiseCard}>
-    <h3>Authentication & Security</h3>
-    <p>
-      Implementing secure authentication and authorization systems including
-      OAuth-based flows, token management, and access control.
-    </p>
-  </div>
-</div>
-
+            <div className={styles.expertiseCard}>
+              <h3>Authentication & Security</h3>
+              <p>
+                Implementing secure authentication and authorization systems
+                including OAuth-based flows, token management, and access
+                control.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* CTA */}

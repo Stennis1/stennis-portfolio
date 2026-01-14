@@ -92,7 +92,7 @@
 }
 
 .skillCategory li:before {
-  content: '▸';
+  content: "▸";
   position: absolute;
   left: 0;
   color: var(--primary-color);
@@ -168,7 +168,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .skillsGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;

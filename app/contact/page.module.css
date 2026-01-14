@@ -31,7 +31,9 @@
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .contactCard:hover {
@@ -106,7 +108,7 @@
 }
 
 .contactList li:before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--primary-color);
@@ -118,7 +120,7 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .sidebarCard {
     position: static;
     max-width: 500px;
