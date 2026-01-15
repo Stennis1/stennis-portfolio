@@ -3,6 +3,15 @@ import styles from "./page.module.css";
 
 export default function WritingPage() {
   const articles = [
+        {
+      title: "The First Two Weeks of 2026: Quiet Signals Worth Paying Attention To",
+      description:
+        "The first two weeks of a new year rarely come with fireworks in tech. What they offer instead are signals — \
+        small, early indicators of where things may be heading before the noise ramps up and narratives harden.",
+      date: "2026-01-15",
+      readTime: "4 min read",
+      link: "https://open.substack.com/pub/stennissmith/p/the-first-two-weeks-of-2025-quiet",
+    },
     {
       title: "A New Year, A Different Kind of Commitment",
       description:
