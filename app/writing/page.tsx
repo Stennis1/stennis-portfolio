@@ -1,9 +1,16 @@
+"use client";
+
 import Container from "../components/Container";
 import styles from "./page.module.css";
+import { useState } from "react";
+
+const ARTICLES_PER_PAGE = 4;
 
 export default function WritingPage() {
+  const [currentPage, setCurrentPage] = useState(1);
+
   const articles = [
-        {
+    {
       title: "The First Two Weeks of 2026: Quiet Signals Worth Paying Attention To",
       description:
         "The first two weeks of a new year rarely come with fireworks in tech. What they offer instead are signals — \
@@ -41,6 +48,13 @@ export default function WritingPage() {
     },
   ];
 
+  const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+
+  const paginatedArticles = articles.slice(
+    (currentPage - 1) * ARTICLES_PER_PAGE,
+    currentPage * ARTICLES_PER_PAGE
+  );
+
   return (
     <Container>
       <div className={styles.writingContent}>
@@ -55,7 +69,7 @@ export default function WritingPage() {
         </div>
 
         <div className={styles.writingGrid}>
-          {articles.map((article, index) => (
+          {paginatedArticles.map((article, index) => (
             <a
               key={index}
               href={article.link}
@@ -78,6 +92,27 @@ export default function WritingPage() {
               </div>
             </a>
           ))}
+        </div>
+
+        <div className={styles.pagination}>
+          <button 
+            disabled={currentPage === 1}
+            onClick={() => setCurrentPage((p) => p - 1)}
+          >
+            Previous
+          </button>
+
+          <span>
+            Page {currentPage} of {totalPages}
+          </span>
+
+          <button
+            disabled={currentPage === totalPages}
+            onClick={() => setCurrentPage((p) => p + 1)}
+          >
+            Next
+          </button>
+
         </div>
 
         <div className={styles.newsletterSection}>
