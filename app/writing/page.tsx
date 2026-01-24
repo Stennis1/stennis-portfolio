@@ -11,11 +11,19 @@ export default function WritingPage() {
 
   const articles = [
     {
+      title: "A URL Shortener as a Gateway System Design Problem",
+      description: "From beginner assumptions to real-world system design. A URL shortener looks like a \
+        weekend project until you try to design one that won't break at scale.",
+      date: "2026-01-24",
+      readTime: "4 min read",
+      link: "https://open.substack.com/pub/stennissmith/p/a-url-shortener-as-a-gateway-system",
+    },
+    {
       title: "The First Two Weeks of 2026: Quiet Signals Worth Paying Attention To",
       description:
         "The first two weeks of a new year rarely come with fireworks in tech. What they offer instead are signals — \
         small, early indicators of where things may be heading before the noise ramps up and narratives harden.",
-      date: "2026-01-15",
+      date: "2026-01-24",
       readTime: "4 min read",
       link: "https://open.substack.com/pub/stennissmith/p/the-first-two-weeks-of-2025-quiet",
     },
