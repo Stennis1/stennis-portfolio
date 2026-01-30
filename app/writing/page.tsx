@@ -11,6 +11,14 @@ export default function WritingPage() {
 
   const articles = [
     {
+      title: "The AI Paradox",
+      description: "For a long time, I didn’t want to use AI. Not because I didn’t understand it, but \
+      because I was wary of what it represented. The hype was loud. The promises were exaggerated...",
+      date: "2026-01-30",
+      readTime: "4 min read",
+      link: "https://stennissmith.substack.com/p/the-ai-paradox",
+    },
+    {
       title: "A URL Shortener as a Gateway System Design Problem",
       description: "From beginner assumptions to real-world system design. A URL shortener looks like a \
         weekend project until you try to design one that won't break at scale.",

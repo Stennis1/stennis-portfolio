@@ -111,8 +111,8 @@
 
 .newsletterButton:hover {
   background: var(--primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  color: white;
 }
 
 .pagination {
