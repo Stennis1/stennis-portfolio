@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Stennis Smith - Software Engineer",
   description:
-    "Backend systems, cloud infrastructure, and full-stack development",
+    "AI, Backend systems, cloud infrastructure, and full-stack development",
 };
 
 export default function RootLayout({
