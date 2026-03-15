@@ -9,8 +9,8 @@ export default function HomePage() {
         {/* HERO */}
         <section className={styles.heroSection}>
           <h1 className={styles.heroTitle}>
-            Backend Systems & <br />
-            <span className={styles.highlight}>Cloud Infrastructure</span>
+            Backend Systems,  <br />
+            <span className={styles.highlight}>Cloud Infrastructure & AI</span>
           </h1>
 
           <p className={styles.heroSubtitle}>
@@ -65,11 +65,11 @@ export default function HomePage() {
             </div>
 
             <div className={styles.expertiseCard}>
-              <h3>Authentication & Security</h3>
+              <h3>AI Integration</h3>
               <p>
-                Implementing secure authentication and authorization systems
-                including OAuth-based flows, token management, and access
-                control.
+                Building practical AI features with LLM APIs, structured
+                outputs, prompt orchestration, and backend workflows designed
+                for reliable real-world use.
               </p>
             </div>
           </div>

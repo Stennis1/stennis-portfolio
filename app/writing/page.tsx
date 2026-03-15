@@ -11,6 +11,14 @@ export default function WritingPage() {
 
   const articles = [
     {
+      title: "AI Is Not Just Changing Work - It Is Redefining It",
+      description:
+        "A reflection on the overwhelming pace of AI, the productivity explosion it is creating, and why the future of work may be changing faster than we expected.",
+      date: "2026-03-08",
+      readTime: "5 min read",
+      link: "https://stennissmith.substack.com/p/ai-is-not-just-changing-work-it-is",
+    },
+    {
       title: "The AI Paradox",
       description: "For a long time, I didn’t want to use AI. Not because I didn’t understand it, but \
       because I was wary of what it represented. The hype was loud. The promises were exaggerated...",

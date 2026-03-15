@@ -99,6 +99,32 @@ export default function ProjectsPage() {
   liveUrl: "https://ai-resume-analyzer-eight-vert.vercel.app/",
 },
     {
+  title: "Customer Service AI Agent",
+  status: "Completed",
+  statusColor: "#10b981",
+  category: "featured",
+  description:
+    "A LangChain-based customer support agent that combines retrieval-augmented responses from a local knowledge base with optional API tooling for order and customer workflows. Includes both CLI and Streamlit interfaces for local and browser-based usage.",
+  details: [
+    "Tool-enabled agent with knowledge search, order status checks, and escalation flows",
+    "Retrieval-augmented answers powered by Chroma vector search over local support documents",
+    "Conversation memory preserving the last 10 exchanges for better continuity",
+    "Optional REST API integration for live order, ticket, and customer lookups",
+    "Dual interfaces with CLI mode and a Streamlit web chat deployment on Render",
+  ],
+  technologies: [
+    "Python",
+    "LangChain",
+    "OpenAI API",
+    "ChromaDB",
+    "Streamlit",
+    "Requests",
+    "Render",
+  ],
+  githubUrl: "https://github.com/Stennis1/Customer-Service-AI-Agent",
+  liveUrl: "https://customer-service-ai-agent-a97r.onrender.com/",
+},
+    {
       title: "Cloud Text-to-Speech Platform",
       status: "Completed",
       statusColor: "#10b981",
@@ -240,6 +266,13 @@ export default function ProjectsPage() {
   <p className={styles.notice}>
     ℹ️ Note: AppImages may not run on Ubuntu 25.04 due to FUSE limitations.
     Works correctly on Ubuntu 20.04, 22.04, and most Linux distributions.
+  </p>
+)}
+
+{project.title === "Customer Service AI Agent" && (
+  <p className={styles.notice}>
+    ⚠️ Note: The live Streamlit deployment runs on Render and may take a short
+    time to respond on the first request if the instance is idle.
   </p>
 )}
 
