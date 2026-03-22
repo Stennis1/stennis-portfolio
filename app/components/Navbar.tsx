@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -27,16 +28,19 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className={styles.navLinks}>
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`${styles.navLink} ${pathname === link.href ? styles.active : ""}`}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <div className={styles.navRight}>
+          <div className={styles.navLinks}>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`${styles.navLink} ${pathname === link.href ? styles.active : ""}`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
