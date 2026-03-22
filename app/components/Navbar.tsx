@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -15,6 +17,23 @@ export default function Navbar() {
     { href: "/writing", label: "Writing" },
     { href: "/contact", label: "Contact" },
   ];
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className={styles.navbar}>
@@ -28,6 +47,7 @@ export default function Navbar() {
           </Link>
         </div>
 
+        {/* Desktop Navigation */}
         <div className={styles.navRight}>
           <div className={styles.navLinks}>
             {navLinks.map((link) => (
@@ -42,7 +62,47 @@ export default function Navbar() {
           </div>
           <ThemeToggle />
         </div>
+
+        {/* Mobile Controls */}
+        <div className={styles.mobileControls}>
+          <ThemeToggle />
+          <button
+            className={styles.hamburger}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
+          >
+            <span className={`${styles.hamburgerLine} ${isMenuOpen ? styles.open : ""}`} />
+            <span className={`${styles.hamburgerLine} ${isMenuOpen ? styles.open : ""}`} />
+            <span className={`${styles.hamburgerLine} ${isMenuOpen ? styles.open : ""}`} />
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ""}`}>
+        <div className={styles.mobileNavLinks}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ""}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Overlay */}
+      {isMenuOpen && (
+        <div 
+          className={styles.overlay} 
+          onClick={() => setIsMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
     </nav>
   );
 }
