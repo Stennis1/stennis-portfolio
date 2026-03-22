@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,45 +18,47 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <Navbar />
-        <main className="main">{children}</main>
-        <footer className="footer">
-          <div className="footerContent">
-            <p>
-              © {new Date().getFullYear()} Stennis Smith. All rights reserved.
-            </p>
-            <div className="socialLinks">
-              <a
-                href="https://github.com/Stennis1"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                GitHub
-              </a>
+        <ThemeProvider>
+          <Navbar />
+          <main className="main">{children}</main>
+          <footer className="footer">
+            <div className="footerContent">
+              <p>
+                © {new Date().getFullYear()} Stennis Smith. All rights reserved.
+              </p>
+              <div className="socialLinks">
+                <a
+                  href="https://github.com/Stennis1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  GitHub
+                </a>
 
-              <a
-                href="https://www.linkedin.com/in/stennis-smith/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                LinkedIn
-              </a>
+                <a
+                  href="https://www.linkedin.com/in/stennis-smith/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  LinkedIn
+                </a>
 
-              <a
-                href="https://stennissmith.substack.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Substack"
-              >
-                Writing
-              </a>
+                <a
+                  href="https://stennissmith.substack.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Substack"
+                >
+                  Writing
+                </a>
+              </div>
             </div>
-          </div>
-        </footer>
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );

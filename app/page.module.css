@@ -82,7 +82,7 @@
 }
 
 .secondaryButton:hover {
-  color: #000;
+  color: var(--text-color);
   background: var(--background-alt);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
@@ -185,7 +185,7 @@
 }
 
 .ctaButton {
-  background: var(--text-color);
+  background: var(--primary-color);
   color: #fff;
   padding: 1rem 2.5rem;
   border-radius: var(--radius);
@@ -196,7 +196,7 @@
 
 .ctaButton:hover {
   color: #fff;
-  background: #374151;
+  background: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
