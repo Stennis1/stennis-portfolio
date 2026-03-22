@@ -4,7 +4,20 @@ import { useTheme } from "./ThemeProvider";
 import styles from "./ThemeToggle.module.css";
 
 export default function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, mounted } = useTheme();
+
+  // Avoid hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return (
+      <button
+        className={styles.toggleButton}
+        aria-label="Toggle theme"
+        style={{ opacity: 0 }}
+      >
+        <span style={{ width: 20, height: 20 }} />
+      </button>
+    );
+  }
 
   return (
     <button
