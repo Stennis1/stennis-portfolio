@@ -1,72 +1,93 @@
+.writingContent {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .writingHeader {
-  margin-bottom: 3rem;
-  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.writingHeader h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.03em;
 }
 
 .subtitle {
-  color: var(--text-light);
-  font-size: 1.125rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
   line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 600px;
 }
 
 .writingGrid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 4rem;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .articleCard {
   background: var(--background-color);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  padding: 2rem;
-  transition: all 0.2s;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
   display: block;
   color: inherit;
 }
 
 .articleCard:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--primary-color);
+  border-color: var(--text-muted);
+  box-shadow: var(--shadow-sm);
 }
 
 .articleHeader {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .articleHeader h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
   color: var(--text-color);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
 }
 
 .articleMeta {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   align-items: center;
-  color: var(--text-light);
-  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
 }
 
 .articleDescription {
-  color: var(--text-color);
+  color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
 }
 
 .articleFooter {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .readMore {
-  color: var(--primary-color);
+  color: var(--accent-color);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.8125rem;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -76,43 +97,50 @@
   background: var(--background-alt);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  padding: 3rem;
-  text-align: center;
+  padding: 2.5rem;
 }
 
 .newsletterContent {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 480px;
 }
 
 .newsletterContent h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
   color: var(--text-color);
+  letter-spacing: -0.02em;
 }
 
 .newsletterContent p {
-  color: var(--text-light);
+  color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
 }
 
 .newsletterButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  background: var(--primary-color);
+  gap: 0.5rem;
+  background: var(--accent-color);
   color: white;
-  padding: 0.875rem 2rem;
-  border-radius: var(--radius);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
   font-weight: 500;
-  transition: all 0.2s;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
 }
 
 .newsletterButton:hover {
-  background: var(--primary-dark);
-  transform: translateY(-3px);
+  background: var(--accent-hover);
+  transform: translateY(-1px);
   color: white;
+}
+
+.newsletterButton svg {
+  width: 16px;
+  height: 16px;
 }
 
 .pagination {
@@ -120,32 +148,43 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
 }
 
 .pagination button {
-  background: none;
+  background: var(--background-color);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius);
+  color: var(--text-color);
+  border-radius: var(--radius-sm);
   padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.pagination button:hover {
-  border-color: var(--primary-color);
+.pagination button:hover:not(:disabled) {
+  border-color: var(--text-muted);
+  background: var(--background-alt);
 }
 
 .pagination button:disabled {
-  opacity: 0.6;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
+  .writingHeader h1 {
+    font-size: 1.75rem;
+  }
+
   .newsletterSection {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .articleCard {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 }
