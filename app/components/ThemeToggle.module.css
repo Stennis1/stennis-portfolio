@@ -2,22 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
   background: var(--background-color);
-  color: var(--text-color);
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .toggleButton:hover {
   background: var(--background-alt);
-  transform: scale(1.05);
+  color: var(--text-color);
+  border-color: var(--text-muted);
 }
 
 .toggleButton:focus {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
+}
+
+.toggleButton svg {
+  width: 18px;
+  height: 18px;
 }
