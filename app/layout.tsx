@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Stennis Smith - Software Engineer",
   description:
     "AI, Backend systems, cloud infrastructure, and full-stack development",
+  icons: {
+    icon: "/pp-icon.png",
+    shortcut: "/pp-icon.png",
+    apple: "/pp-icon.png",
+  },
 };
 
 export default function RootLayout({

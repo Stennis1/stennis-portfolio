@@ -11,16 +11,16 @@ export default function HomePage() {
         <section className={styles.heroSection}>
           <AnimatedSection delay={0}>
             <h1 className={styles.heroTitle}>
-              Backend Systems,  <br />
+              Backend Systems, <br />
               <span className={styles.highlight}>Cloud Infrastructure & AI</span>
             </h1>
           </AnimatedSection>
 
           <AnimatedSection delay={100}>
             <p className={styles.heroSubtitle}>
-              I'm a software engineer with a strong interest in backend systems,
-              cloud infrastructure, full-stack application development and
-              Artificial Intelligence.
+              I&apos;m a software engineer with a strong interest in backend
+              systems, cloud infrastructure, full-stack application development
+              and Artificial Intelligence.
             </p>
           </AnimatedSection>
 
