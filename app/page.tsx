@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Container from "./components/Container";
 import AnimatedSection from "./components/AnimatedSection";
@@ -34,6 +35,19 @@ export default function HomePage() {
               </Link>
             </div>
           </AnimatedSection>
+
+          <div className={styles.heroPortraitWrap}>
+            <AnimatedSection delay={150}>
+              <Image
+                src="/pp.jpeg"
+                alt="Stennis Smith portrait"
+                width={220}
+                height={220}
+                priority
+                className={styles.heroPortrait}
+              />
+            </AnimatedSection>
+          </div>
         </section>
 
         {/* FEATURED EXPERTISE */}
@@ -87,9 +101,9 @@ export default function HomePage() {
         {/* CTA */}
         <AnimatedSection delay={0}>
           <section className={styles.ctaSection}>
-            <h2>Let's Build Something Meaningful</h2>
+            <h2>Let&apos;s Build Something Meaningful</h2>
             <p>
-              I'm always interested in working on challenging backend and
+              I&apos;m always interested in working on challenging backend and
               infrastructure problems.
             </p>
             <Link href="/contact" className={styles.ctaButton}>
