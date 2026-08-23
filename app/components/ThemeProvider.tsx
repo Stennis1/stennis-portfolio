@@ -17,6 +17,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- client-only mount flag needed to avoid SSR/client theme hydration mismatch
     setMounted(true);
     const savedTheme = localStorage.getItem("theme") as Theme | null;
     const prefersDark = window.matchMedia(

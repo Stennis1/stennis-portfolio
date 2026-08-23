@@ -9,6 +9,7 @@ import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [prevPathname, setPrevPathname] = useState(pathname);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -19,9 +20,10 @@ export default function Navbar() {
   ];
 
   // Close menu when route changes
-  useEffect(() => {
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setIsMenuOpen(false);
-  }, [pathname]);
+  }
 
   // Prevent body scroll when menu is open
   useEffect(() => {
