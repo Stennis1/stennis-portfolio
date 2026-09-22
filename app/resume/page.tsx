@@ -10,7 +10,7 @@ export default function ResumePage() {
             <h1>Resume</h1>
             <p className={styles.subtitle}>
               A focused overview of my experience in cloud infrastructure,
-              DevOps, and platform engineering
+              DevOps, and software engineering
             </p>
           </div>
           <a
@@ -191,6 +191,16 @@ export default function ResumePage() {
                 <span className={styles.techStack}>
                   LLM APIs · Backend APIs · Prompt Engineering
                 </span>
+                <div className={styles.projectLinks}>
+                  <a
+                    href="https://customer-service-ai-agent-ya8f.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </div>
 
               <div className={styles.projectHighlight}>
@@ -206,6 +216,16 @@ export default function ResumePage() {
                 <span className={styles.techStack}>
                   FastAPI · Python · LLM APIs · Prompt Engineering
                 </span>
+                <div className={styles.projectLinks}>
+                  <a
+                    href="https://ai-resume-analyzer-eight-vert.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </div>
 
               <div className={styles.projectHighlight}>
@@ -219,6 +239,16 @@ export default function ResumePage() {
                 <span className={styles.techStack}>
                   Python · Linux · AppImage · PyInstaller · linuxdeploy
                 </span>
+                <div className={styles.projectLinks}>
+                  <a
+                    href="https://github.com/Stennis1/text-organizer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
 
               <div className={styles.projectHighlight}>
@@ -235,6 +265,16 @@ export default function ResumePage() {
                   AWS Polly · Lambda · API Gateway · CloudFront · S3 ·
                   Terraform
                 </span>
+                <div className={styles.projectLinks}>
+                  <a
+                    href="https://d1khe43zuwow7v.cloudfront.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </div>
 
               <div className={styles.projectHighlight}>
@@ -249,6 +289,16 @@ export default function ResumePage() {
                 <span className={styles.techStack}>
                   AWS Amplify · AppSync · Lambda · DynamoDB
                 </span>
+                <div className={styles.projectLinks}>
+                  <a
+                    href="https://github.com/Stennis1/profilesapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
             </div>
           </section>
@@ -271,8 +321,30 @@ export default function ResumePage() {
                   client projects using modern JavaScript frameworks, design
                   RESTful APIs and database schemas, and support AI-related
                   initiatives through data validation and workflow
-                  optimization.
+                  optimization. Building a multi-tenant school-management
+                  platform (Next.js, Prisma) with tenant-scoped data models,
+                  and architecting and operating TYP, a live exam-prep
+                  platform on Vercel with Neon Postgres, CI/CD, and
+                  monitoring.
                 </p>
+                <div className={styles.projectLinks}>
+                  <a
+                    href="https://school-management-system-sage-gamma.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    School Management (Preview)
+                  </a>
+                  <a
+                    href="https://www.testingyourpreparedness.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    TYP (Live)
+                  </a>
+                </div>
               </div>
 
               <div className={styles.projectHighlight}>
@@ -376,19 +448,84 @@ export default function ResumePage() {
               <div className={styles.skillCategory}>
                 <h3>Cloud & Security</h3>
                 <ul>
-                  <li>AWS Certified Developer - Associate</li>
-                  <li>AWS Solutions Architect Certification - Associate</li>
-                  <li>AWS Knowledge: Cloud Essentials</li>
-                  <li>CC (Certified in Cybersecurity), ISC2</li>
+                  <li>
+                    <a
+                      href="https://www.credly.com/badges/c81f94aa-2ea8-467a-90c7-8b7cf8b34a54/public_url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      AWS Certified Developer - Associate
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.credly.com/badges/57dd0b39-78ac-42ae-8ecf-a6f315661295/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      AWS Solutions Architect Certification - Associate
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.credly.com/badges/5be605c4-c623-45ce-a57e-26ad7ffa8c81/public_url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      AWS Certified Cloud Practitioner
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.credly.com/badges/57a06afc-4631-4232-b419-0c7524896ff6/public_url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      KCNA: Kubernetes and Cloud Native Associate
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.credly.com/badges/93626c3d-7605-4b62-b729-77e6e3f95209/linked_in_profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      CC (Certified in Cybersecurity), ISC2
+                    </a>
+                  </li>
                 </ul>
               </div>
 
               <div className={styles.skillCategory}>
                 <h3>Software & Product</h3>
                 <ul>
-                  <li>Frontend Web Development, ALX Africa</li>
-                  <li>Backend Web Development, ALX Africa</li>
-                  <li>Project Management, Cambridge Center of Excellence</li>
+                  <li>
+                    <a
+                      href="https://savanna.alxafrica.com/certificates/YHN9r7ehyC"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Frontend Web Development, ALX Africa
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://savanna.alxafrica.com/certificates/rJePHMZLyS"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Backend Web Development, ALX Africa
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://cambridge.edu.gh/certificate-registry/?lname=Smith&othernames=Stennis&country=Ghana&course=Project+Management"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Project Management, Cambridge Center of Excellence
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

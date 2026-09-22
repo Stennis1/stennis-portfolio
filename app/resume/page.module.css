@@ -135,6 +135,32 @@
   background-color: var(--accent-color);
 }
 
+.skillCategory li a {
+  color: inherit;
+}
+
+.skillCategory li a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.625rem;
+}
+
+.projectLink {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.projectLink:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
 .projectHighlights {
   display: flex;
   flex-direction: column;
