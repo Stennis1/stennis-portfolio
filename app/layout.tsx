@@ -65,6 +65,15 @@ export default function RootLayout({
                 >
                   Writing
                 </a>
+
+                <a
+                  href="https://www.credly.com/users/stennis-smith.40e017bc/badges/credly"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Credly"
+                >
+                  Credly
+                </a>
               </div>
             </div>
           </footer>

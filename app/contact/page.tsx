@@ -78,6 +78,17 @@ export default function ContactPage() {
                   linkedin.com/in/stennis-smith
                 </a>
               </li>
+
+              <li>
+                <strong>Credly:</strong>{" "}
+                <a
+                  href="https://www.credly.com/users/stennis-smith.40e017bc/badges/credly"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  credly.com/users/stennis-smith
+                </a>
+              </li>
             </ul>
           </div>
         </div>

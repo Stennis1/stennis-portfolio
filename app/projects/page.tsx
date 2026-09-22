@@ -122,7 +122,7 @@ export default function ProjectsPage() {
     "Render",
   ],
   githubUrl: "https://github.com/Stennis1/Customer-Service-AI-Agent",
-  liveUrl: "https://customer-service-ai-agent-a97r.onrender.com/",
+  liveUrl: "https://customer-service-ai-agent-ya8f.onrender.com/",
 },
     {
       title: "Cloud Text-to-Speech Platform",
